@@ -1,0 +1,78 @@
+{
+  "name": "gptvis-tanstack-charts",
+  "version": "0.1.0",
+  "description": "TanStack Charts adapter for GPT-Vis. Same vis syntax, GPTVis class, and chart constructors.",
+  "keywords": [
+    "gpt-vis",
+    "tanstack",
+    "tanstack-charts",
+    "vis",
+    "llm",
+    "charts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wzc520pyfm/GPT-Vis-TanstackCharts.git",
+    "directory": "packages/gptvis-tanstack-charts"
+  },
+  "homepage": "https://github.com/wzc520pyfm/GPT-Vis-TanstackCharts#readme",
+  "bugs": {
+    "url": "https://github.com/wzc520pyfm/GPT-Vis-TanstackCharts/issues"
+  },
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "src",
+    "skills"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "default": "./dist/react.js"
+    },
+    "./syntax": {
+      "types": "./dist/syntax.d.ts",
+      "import": "./dist/syntax.js",
+      "default": "./dist/syntax.js"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc -p tsconfig.check.json --noEmit",
+    "test": "vitest run && npm run build && node scripts/check-package.mjs"
+  },
+  "peerDependencies": {
+    "@tanstack/charts": "^1.5.0",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@tanstack/charts": "^1.5.0",
+    "@types/react": "^19.2.2",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

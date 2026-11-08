@@ -15,6 +15,8 @@ const THEMES: { id: ThemeName; label: string }[] = [
   { id: 'dark', label: '深色' },
 ];
 
+const REPO_URL = 'https://github.com/wzc520pyfm/GPT-Vis-TanstackCharts';
+
 type Viewport = 'fluid' | 'tablet' | 'phone';
 
 interface StreamState {
@@ -98,6 +100,10 @@ export function App() {
           <h1>同一套 vis 语法，<br />换一颗原生图表引擎。</h1>
         </div>
         <div className="masthead-copy">
+          <a className="repo-link" href={REPO_URL} target="_blank" rel="noreferrer">
+            GitHub 仓库
+            <span aria-hidden="true">↗</span>
+          </a>
           <p>
             面向 LLM 输出的流式可视化适配层。解析与容错保持独立，统计图由
             TanStack Charts 原生 marks 和 scales 绘制。
@@ -303,7 +309,12 @@ export function App() {
 
       <footer className="site-foot">
         <span>GPT-Vis syntax · TanStack Charts rendering</span>
-        <span>MIT · gptvis-tanstack-charts</span>
+        <span>
+          MIT · gptvis-tanstack-charts ·{' '}
+          <a href={REPO_URL} target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </span>
       </footer>
     </div>
   );

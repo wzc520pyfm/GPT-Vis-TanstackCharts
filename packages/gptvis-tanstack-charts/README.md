@@ -1,5 +1,9 @@
 # GPT-Vis TanStack Charts
 
+[![npm version](https://img.shields.io/npm/v/gptvis-tanstack-charts.svg)](https://www.npmjs.com/package/gptvis-tanstack-charts)
+[![npm](https://img.shields.io/npm/v/gptvis-tanstack-charts/latest.svg?label=latest)](https://www.npmjs.com/package/gptvis-tanstack-charts)
+[![npm downloads](https://img.shields.io/npm/dm/gptvis-tanstack-charts.svg)](https://www.npmjs.com/package/gptvis-tanstack-charts)
+
 [GPT-Vis](https://github.com/antvis/GPT-Vis) 的 TanStack Charts 适配层。
 模型仍然输出同一套 `vis` 语法，图表由
 [@tanstack/charts](https://tanstack.com/charts) 绘制，不依赖 AntV 或 ECharts。

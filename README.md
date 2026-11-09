@@ -1,5 +1,9 @@
 # GPT-Vis TanStack Charts
 
+[![npm version](https://img.shields.io/npm/v/gptvis-tanstack-charts.svg)](https://www.npmjs.com/package/gptvis-tanstack-charts)
+[![npm](https://img.shields.io/npm/v/gptvis-tanstack-charts/latest.svg?label=latest)](https://www.npmjs.com/package/gptvis-tanstack-charts)
+[![npm downloads](https://img.shields.io/npm/dm/gptvis-tanstack-charts.svg)](https://www.npmjs.com/package/gptvis-tanstack-charts)
+
 [GPT-Vis](https://github.com/antvis/GPT-Vis) 的
 [TanStack Charts](https://tanstack.com/charts) 适配层。模型继续写 `vis`
 语法，图由 TanStack Charts 原生 marks、scales、polar、hierarchy 和 sankey
@@ -31,9 +35,13 @@ data
 
 ## 安装
 
+`@tanstack/charts`（`^1.5.0`）是 peer dependency，需与本包一起安装：
+
 ```bash
 npm install gptvis-tanstack-charts @tanstack/charts
 ```
+
+React 入口还需要 `react` / `react-dom`（`>=18`）；主包与服务端解析入口不会加载 React。
 
 React 使用方式：
 

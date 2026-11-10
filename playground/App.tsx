@@ -93,7 +93,9 @@ export function App() {
       <header className="masthead">
         <div>
           <p className="kicker">
-            GPT-Vis
+            <a href="https://github.com/antvis/GPT-Vis" target="_blank" rel="noreferrer">
+              GPT-Vis
+            </a>
             <span className="cross">×</span>
             TanStack Charts
           </p>
@@ -308,7 +310,12 @@ export function App() {
       </section>
 
       <footer className="site-foot">
-        <span>GPT-Vis syntax · TanStack Charts rendering</span>
+        <span>
+          <a href="https://github.com/antvis/GPT-Vis" target="_blank" rel="noreferrer">
+            GPT-Vis
+          </a>{' '}
+          syntax · TanStack Charts rendering
+        </span>
         <span>
           MIT · gptvis-tanstack-charts ·{' '}
           <a href={REPO_URL} target="_blank" rel="noreferrer">
